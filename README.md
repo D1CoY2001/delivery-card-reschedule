@@ -15,4 +15,4 @@ java -jar artifacts/app-replan-delivery.jar
 
 При повторной отправке формы с изменённой датой приложение не предлагает перепланировать встречу.
 
-Issue: <вставьте сюда ссылку на ваш issue>
+Issue: https://github.com/D1CoY2001/delivery-card-reschedule/issues/1
