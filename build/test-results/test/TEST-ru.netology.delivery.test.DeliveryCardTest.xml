@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.delivery.test.DeliveryCardTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-11-22T17:26:04" hostname="RUSLAN" time="7.156">
+<testsuite name="ru.netology.delivery.test.DeliveryCardTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-11-22T17:39:49" hostname="RUSLAN" time="16.261">
   <properties/>
-  <testcase name="shouldRescheduleMeeting()" classname="ru.netology.delivery.test.DeliveryCardTest" time="7.156">
-    <failure message="Element not found {button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795368371875.0.png&#13;&#10;Page source: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795368371875.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: Cannot locate an element button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)}
+  <testcase name="shouldRescheduleMeeting()" classname="ru.netology.delivery.test.DeliveryCardTest" time="16.261">
+    <failure message="Element not found {button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795369205728.0.png&#13;&#10;Page source: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795369205728.0.html&#13;&#10;Timeout: 4s&#13;&#10;Caused by: NoSuchElementException: Cannot locate an element button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)}
 Expected: visible
-Screenshot: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795368371875.0.png
-Page source: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795368371875.0.html
-Timeout: 4 s.
+Screenshot: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795369205728.0.png
+Page source: file:/C:/Users/rassk/OneDrive/Desktop/delivery-card-reschedule/build/reports/tests/1795369205728.0.html
+Timeout: 4s
 Caused by: NoSuchElementException: Cannot locate an element button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)
-	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
-	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
-	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:165)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy17.shouldBe(Unknown Source)
-	at app//ru.netology.delivery.test.DeliveryCardTest.fillAndSubmit(DeliveryCardTest.java:66)
-	at app//ru.netology.delivery.test.DeliveryCardTest.shouldRescheduleMeeting(DeliveryCardTest.java:27)
+	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:89)
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:140)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:123)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:99)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:24)
+	at app//com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27)
+	at app//com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:162)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:138)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:90)
+	at app//com.sun.proxy.$Proxy14.shouldBe(Unknown Source)
+	at app//ru.netology.delivery.test.DeliveryCardTest.fillAndSubmit(DeliveryCardTest.java:72)
+	at app//ru.netology.delivery.test.DeliveryCardTest.shouldRescheduleMeeting(DeliveryCardTest.java:33)
 	at java.base@11.0.32.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.32.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.32.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,22 +106,24 @@ Caused by: NoSuchElementException: Cannot locate an element button.findBy(text &
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element button.findBy(text &quot;Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°С‚СЊ&quot;)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.51.0', revision: '35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.32.1'
 Driver info: driver.version: unknown
-	at app//com.codeborne.selenide.impl.CollectionElementByCondition.getWebElement(CollectionElementByCondition.java:55)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
-	... 93 more
+	at app//com.codeborne.selenide.impl.CollectionElementByCondition.getWebElement(CollectionElementByCondition.java:46)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:112)
+	... 94 more
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-нояб. 22, 2026 8:26:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 157
-нояб. 22, 2026 8:26:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 157.0.8103.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+нояб. 22, 2026 8:40:00 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
+WARNING: Metadata file C:\Users\rassk\.cache\selenium\se-metadata.json cannot be parsed: missing field `stats` at line 11 column 1. Using empty metadata
+нояб. 22, 2026 8:40:00 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$0
+WARNING: Metadata file C:\Users\rassk\.cache\selenium\se-metadata.json cannot be parsed: missing field `stats` at line 11 column 1. Using empty metadata
+нояб. 22, 2026 8:40:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 157, returning the closest version; found: 155; Please update to a Selenium version that supports CDP version 157
 ]]></system-err>
 </testsuite>

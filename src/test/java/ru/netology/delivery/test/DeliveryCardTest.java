@@ -1,6 +1,7 @@
 package ru.netology.delivery.test;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.delivery.data.DataGenerator;
@@ -11,6 +12,11 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class DeliveryCardTest {
+
+    static {
+        Configuration.browser = "chrome";
+        Configuration.headless = true;
+    }
 
     private UserInfo user;
 
