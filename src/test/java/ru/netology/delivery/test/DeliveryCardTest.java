@@ -30,25 +30,25 @@ public class DeliveryCardTest {
 
         $("[data-test-id=success-notification]")
                 .shouldBe(Condition.visible)
-                .shouldHave(Condition.text("\u0423\u0441\u043F\u0435\u0448\u043D\u043E!"))
-                .shouldHave(Condition.text("\u0412\u0441\u0442\u0440\u0435\u0447\u0430 \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u0437\u0430\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0430"));
+                .shouldHave(Condition.text("Успешно!"))
+                .shouldHave(Condition.text("Встреча успешно запланирована"));
 
         changeDateAndSubmit(secondDate);
 
         $("[data-test-id=replan-notification]")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.text("\u041D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u0438\u0435"))
-                .shouldHave(Condition.text("\u0423 \u0432\u0430\u0441 \u0443\u0436\u0435 \u0437\u0430\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0430 \u0432\u0441\u0442\u0440\u0435\u0447\u0430 \u043D\u0430 \u0434\u0440\u0443\u0433\u0443\u044E \u0434\u0430\u0442\u0443. \u041F\u0435\u0440\u0435\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C?"));
+                .shouldHave(Condition.text("Необходимо подтверждение"))
+                .shouldHave(Condition.text("У вас уже запланирована встреча на другую дату. Перепланировать?"));
 
         $$("button")
-                .findBy(Condition.text("\u041F\u0435\u0440\u0435\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C"))
+                .findBy(Condition.text("Перепланировать"))
                 .shouldBe(Condition.visible)
                 .click();
 
         $("[data-test-id=success-notification]")
                 .shouldBe(Condition.visible)
-                .shouldHave(Condition.text("\u0423\u0441\u043F\u0435\u0448\u043D\u043E!"))
-                .shouldHave(Condition.text("\u0412\u0441\u0442\u0440\u0435\u0447\u0430 \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u0437\u0430\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0430"));
+                .shouldHave(Condition.text("Успешно!"))
+                .shouldHave(Condition.text("Встреча успешно запланирована"));
     }
 
     private void fillAndSubmit(UserInfo user) {
@@ -71,7 +71,7 @@ public class DeliveryCardTest {
         $("[data-test-id=agreement]").click();
 
         $$("button")
-                .findBy(Condition.text("\u0417\u0430\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C"))
+                .findBy(Condition.text("Запланировать"))
                 .shouldBe(Condition.visible)
                 .click();
     }
@@ -85,7 +85,7 @@ public class DeliveryCardTest {
                 .pressTab();
 
         $$("button")
-                .findBy(Condition.text("\u0417\u0430\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C"))
+                .findBy(Condition.text("Запланировать"))
                 .shouldBe(Condition.visible)
                 .click();
     }
