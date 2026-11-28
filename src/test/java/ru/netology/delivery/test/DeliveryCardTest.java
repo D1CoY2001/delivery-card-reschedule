@@ -31,7 +31,7 @@ public class DeliveryCardTest {
         $("[data-test-id=success-notification]")
                 .shouldBe(Condition.visible)
                 .shouldHave(Condition.text("Успешно!"))
-                .shouldHave(Condition.text("Встреча успешно запланирована"));
+                .shouldHave(Condition.text("Встреча успешно запланирована на " + user.getDate()));
 
         changeDateAndSubmit(secondDate);
 
@@ -48,7 +48,7 @@ public class DeliveryCardTest {
         $("[data-test-id=success-notification]")
                 .shouldBe(Condition.visible)
                 .shouldHave(Condition.text("Успешно!"))
-                .shouldHave(Condition.text("Встреча успешно запланирована"));
+                .shouldHave(Condition.text("Встреча успешно запланирована на " + secondDate));
     }
 
     private void fillAndSubmit(UserInfo user) {
